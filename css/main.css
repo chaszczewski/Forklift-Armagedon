@@ -13,6 +13,7 @@ body {
   background-image: url(../img/bcg.webp);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   /* background-size: contain; */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,20 +24,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   text-transform: uppercase;
-  color: red;
+  color: #d13a3a;
   font-family: "Permanent Marker", cursive;
-  font-size: 50px;
-  text-shadow: 2px 10px black;
+  font-size: 26px;
+  text-shadow: 2px 5px black;
 }
 
 .menu {
-  width: 250px;
+  margin-top: 30px;
+  width: 200px;
+  border: 1px solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +56,10 @@ h1 {
 }
 
 .menu .play {
-  background-color: rgba(250, 235, 215, 0.681);
+  background-color: #ed0505ae;
+  background: -webkit-gradient(linear, left top, right top, from(#ed0505ae), to(#632c2cae));
+  background: -o-linear-gradient(left, #ed0505ae, #632c2cae);
+  background: linear-gradient(90deg, #ed0505ae, #632c2cae);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +77,13 @@ h1 {
 }
 
 .menu .play p {
-  padding: 20px;
+  padding: 14px;
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */
