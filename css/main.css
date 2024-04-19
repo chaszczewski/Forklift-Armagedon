@@ -23,10 +23,15 @@ body {
           align-items: center;
 }
 
+h1 {
+  position: absolute;
+  top: 15%;
+  text-transform: uppercase;
+  color: red;
+}
+
 .menu {
-  width: 300px;
-  height: 500px;
-  border: 1px solid red;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,9 +39,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .menu .play {
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.681);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .play:hover {
+  background-color: #ff1500;
+  cursor: pointer;
+}
+
+.menu .play p {
+  padding: 20px;
 }
 /*# sourceMappingURL=main.css.map */
