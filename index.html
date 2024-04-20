@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Forklift Armagedon By Chaszczevski.com</title>
+    <link rel="shortcut icon" href="img/player.png" type="image/x-icon">
     <style>
 
     </style>
@@ -13,14 +15,14 @@
 
     <div id="audioPlayer">
         <audio id="myAudio" autoplay>
-            <source src="mp3/kevin-sam-w-domu-prod-i-skrecze-the-returners-miejskie-ptaki.mp3" type="audio/mp3">
+            <source src="" type="audio/mp3">
             Twoja przeglądarka nie odtwarza elementu audio
         </audio>
 
-        <button onclick="tooglePlay()">Play/Stop</button>
-        <button onclick="toogleMute()">Wycisz</button>
-        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value)">
-        <label for="volumeControl">Głośność</label>
+        <button onclick="tooglePlay()"><i class="fa-regular fa-circle-play"></i></button>
+        <button onclick="toogleMute()"><i class="fa-solid fa-volume-xmark"></i></button>
+        <input style="height: 5px;" type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value)">
+        <!-- <label for="volumeControl">Głośność</label> -->
     </div>
 
     <h1>forklift Armagedon</h1>
