@@ -30,6 +30,12 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 798px) {
+  body {
+    background-size: auto;
+  }
+}
+
 h1 {
   position: absolute;
   top: 10%;
@@ -38,6 +44,19 @@ h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 26px;
   text-shadow: 2px 5px black;
+}
+
+@media (min-width: 798px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 978px) {
+  h1 {
+    font-size: 58px;
+    margin-top: 40px;
+  }
 }
 
 .menu {
@@ -53,6 +72,20 @@ h1 {
           flex-direction: column;
   border-radius: 5px;
   overflow: hidden;
+}
+
+@media (min-width: 798px) {
+  .menu {
+    width: 250px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 978px) {
+  .menu {
+    width: 300px;
+    margin-top: 0;
+  }
 }
 
 .menu .play {
@@ -79,6 +112,12 @@ h1 {
 .menu .play p {
   padding: 14px;
   color: #fff;
+}
+
+@media (min-width: 798px) {
+  .menu .play p {
+    padding: 29px 14px;
+  }
 }
 
 .footer {
