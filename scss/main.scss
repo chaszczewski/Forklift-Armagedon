@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Orbitron", sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -72,6 +73,7 @@ h1 {
 
         &:hover {
             background-color: rgb(255, 21, 0);
+            background: linear-gradient(90deg,#ff0000cf, #5e1f1fcd);
             cursor: pointer;
         }
 
@@ -91,3 +93,14 @@ h1 {
     bottom: 10px;
     font-size: 30px;
 }
+
+
+// Music
+
+#audioPlayer {
+    margin: 10px;
+  }
+  
+  #audioPlayer button, #audioPlayer input {
+    margin: 5px;
+  }
