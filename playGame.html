@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/game.css">
     <title>Playing - Forklift Armagedon</title>
+    <style>
+        #gameCanvas {
+            position: relative;
+            /* top: 50%;
+            left: 50%; */
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        .player {
+            position: absolute;
+            width: 50px; /* Ustaw rozmiar obrazka */
+            height: 50px;
+            transition: transform 0.1s; /* Gładkie przejście */
+        }
+    </style>
 </head>
 <body>
-    sss
-    <canvas id="gameCanvas">
-        <div class="player">
-            <img src="img/player.png" alt="">
-        </div>
-    </canvas>
+    <!-- <div class="menu">ss</div>
+    <div class="nav">adasdasd</div> -->
+    <canvas id="gameCanvas"></canvas>
+    <img src="img/player.png" alt="" class="player" style="left: 0; top: 0;">
+    <div class="menu"><a href="index.html">Exit</a></div>
+    <script>
+        const player = document.querySelector('.player');
+        const canvas = document.getElementById('gameCanvas');
+        let x = 0, y = 0;
+
+        function movePlayer(event) {
+            switch(event.keyCode) {
+                case 37: // Strzałka w lewo
+                    if (x > 0) x -= 10;
+                    break;
+                case 39: // Strzałka w prawo
+                    if (x < canvas.offsetWidth - player.offsetWidth) x += 10;
+                    break;
+                case 38: // Strzałka w górę
+                    if (y > 0) y -= 10;
+                    break;
+                case 40: // Strzałka w dół
+                    if (y < canvas.offsetHeight - player.offsetHeight) y += 10;
+                    break;
+            }
+            player.style.transform = `translate(${x}px, ${y}px)`;
+        }
+
+        document.addEventListener('keydown', movePlayer);
+    </script>
 </body>
 </html>
